@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prévisualiseur de Markdown</title>
+    <!-- Lien vers Bootstrap pour le style -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="text-center mb-4">
+            <h1>Prévisualiseur de Markdown</h1>
+            <p class="lead">Écrivez votre texte en Markdown et visualisez le résultat en temps réel.</p>
+        </header>
+
+        <section class="mb-4">
+            <h2>Éditeur</h2>
+            <textarea name="editor" id="editor" class="form-control" rows="10" placeholder="Écrivez ici..."></textarea>
+        </section>
+
+        <section>
+            <h2>Aperçu</h2>
+            <div id="preview" class="border p-3 rounded">
+                <p>Votre texte sera affiché ici.</p>
+            </div>
+        </section>
+
+        <footer class="text-center mt-4">
+            <button class="btn btn-primary" id="clearButton">Effacer</button>
+            <small class="text-muted d-block mt-2">Utilisez Markdown pour formater votre texte.</small>
+        </footer>
+    </main>
+
+    <!-- Script pour inclure la bibliothèque marked -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
